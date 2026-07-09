@@ -1,0 +1,123 @@
+---
+title: "BoF Session Guide"
+subtitle: "GenAI Usage and Burden"
+format:
+  html:
+    toc: true
+    theme: cosmo
+    number-sections: false
+  typst:
+    margin:
+      x: 0.6in
+      y: 0.6in
+    fontsize: 11pt
+    number-sections: false
+    include-in-header:
+      text: |
+        #show heading.where(level: 1): set text(size: 15pt, weight: "bold")
+        #show heading.where(level: 1): set block(above: 12pt, below: 5pt)
+        #show heading.where(level: 2): set text(size: 12pt, weight: "bold")
+        #show heading.where(level: 2): set block(above: 10pt, below: 4pt)
+        #set list(spacing: 6pt)
+        #set par(spacing: 7pt, leading: 0.6em)
+---
+
+## Purpose
+
+This guide adapts the pyOpenSci 1:1 maintainer interview effort into a
+conference Birds of a Feather session. The goal stays the same, understanding
+GenAI related behaviours well enough to eventually propose guidelines, but
+the mechanism changes to small group discussion at themed tables, since the
+organizer will not personally talk with everyone in the room.
+
+## How to use this guide
+
+This document has two parts. The first part, the pages you are reading now,
+is for you as the session organizer: purpose, timing, room setup, and shared
+doc setup. The second part is a set of theme cards, one per page, meant to be
+printed and handed to each table's volunteer facilitator. The themes are
+defined in a separate file so they can be swapped out without touching
+anything else in this guide.
+
+## Run of show
+
+Target 45 minutes, expected to run to 60. Only the breakout discussion block
+is elastic. Everything else stays fixed regardless of overrun.
+
+| Segment | Time | Content |
+| --- | --- | --- |
+| Welcome and framing | 5 min | Purpose of the session, why pyOpenSci is looking at this, a short framing of patterns already observed. [Insert current pattern data or observations here before the session. Do not present placeholder numbers as real.] |
+| Group formation and instructions | 3 min | Point out the four themed tables, explain self-selection, facilitators introduce themselves, quick note on the shared doc and QR code. State clearly that this session is not about debugging anyone's specific tool setup, it is about honest experience. |
+| Breakout discussion | 27 min, flexes to 40 or more | Themed tables run their question set with their facilitator, logging notes into the shared doc live. This is the block that absorbs the 45 to 60 minute overrun. If running long, cut here. If running short, add here. |
+| Facilitator highlights | 5 min | Each of the four facilitators gives one short spoken highlight from their table, instead of hearing from every attendee, so the room gets a cross section without a full share-back. |
+| Closing | 3 min | Thanks, reminder that notes live in the shared doc, stay-involved QR code or link. |
+
+## Room setup and group formation
+
+No dedicated table signage is needed. Each facilitator's printed theme card
+doubles as the table marker, held up or placed on the table during the
+framing segment. After instructions, attendees self-select by walking to
+whichever themed table interests them most.
+
+If a table grows past about 10 to 12 people, the facilitator splits into two
+clusters within the same theme, pooling notes under the same shared doc
+heading rather than attempting one large-group conversation.
+
+## Shared doc and stay involved
+
+Before the session, create a single Google Doc for the whole room. Give it
+one heading per theme, matching the theme cards, plus a stay-involved section
+at the top with a survey or mailing list link. Set sharing so anyone with the
+link can comment or edit, and generate a QR code for that link.
+
+Show the QR code during framing and again at closing. It covers both live
+note taking during the session and the post session survey signup, so
+attendees only need to scan once.
+
+::: {.content-visible when-format="html"}
+::: {style="border:2px dashed #888; width:160px; height:160px; display:flex; align-items:center; justify-content:center; text-align:center; margin:1.5em auto; font-size:0.9em; color:#666;"}
+QR code placeholder
+:::
+:::
+
+::: {.content-visible when-format="typst"}
+```{=typst}
+#align(center)[
+  #box(width: 1.3in, height: 1.3in, stroke: 1pt, inset: 8pt)[
+    #align(center + horizon)[QR CODE #linebreak() PLACEHOLDER]
+  ]
+]
+```
+:::
+
+Shared doc link: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+## Theme cards
+
+The following pages are the theme cards. Print and hand one to each
+facilitator. Themes are defined in `_bof-themes.qmd` and can be changed there
+without editing anything above this line.
+
+```{=typst}
+#pagebreak()
+```
+
+{{< include _bof-themes.qmd >}}
+
+```{=typst}
+#pagebreak()
+```
+
+## Closing
+
+Read or paraphrase:
+
+"Thank you all so much for the honest conversation today. Everything your
+table discussed has been captured in the shared doc, and we will be using it,
+alongside the 1:1 interviews we are running separately, to understand what is
+actually going on and start proposing guidelines that reduce burden rather
+than add to it.
+
+If you want to stay involved, scan the code or use the link to join the
+survey, sprint, or focus group mailing list. We will follow up once this is
+written up."

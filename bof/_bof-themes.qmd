@@ -1,0 +1,116 @@
+## Theme: Motivations and perceptions
+
+Why this theme: understanding why people adopt or avoid GenAI tools, and how
+they honestly feel about them, not just how often they use them.
+
+Questions:
+
+- What led people at this table to start using GenAI tools in their open
+  source work? What has kept others from adopting them?
+- When you do use these tools, what are you actually gaining? Not how
+  often, but what the value is.
+- What are your honest feelings about these tools in your role, whether
+  that is maintaining, contributing, or reviewing?
+- Does everyone at this table feel the same way about this, or is there
+  real disagreement here?
+
+Facilitator probe: is there a gap between what people think they are
+supposed to feel about these tools and what they actually feel day to day?
+
+Time budget: if short on time, prioritize the gaining and value question
+and the disagreement question.
+
+Log in the shared doc: the range of views at the table, especially where
+people disagreed, not just the average.
+
+```{=typst}
+#pagebreak()
+```
+
+## Theme: Burden and strain
+
+Why this theme: understanding where GenAI is adding burden to open source
+work, and where it might be relieving it, especially for maintainers and
+reviewers.
+
+Questions:
+
+- Where has GenAI added burden to the open source work represented at this
+  table? Where has it relieved burden?
+- Has anyone reviewed a contribution they suspected was AI assisted? What
+  was that like?
+- How much of the strain people feel, if any, gets attributed to GenAI
+  related changes versus everything else going on?
+- Is there a specific moment or incident anyone at this table wants to
+  share that stands out as particularly stressful?
+
+Facilitator probe: this can be a hard thing to say out loud in a group.
+Remind the table that notes are captured thematically, not attributed to
+individuals by name.
+
+Time budget: if short on time, prioritize the burden versus relief
+question and any specific incident.
+
+Log in the shared doc: specific incidents in general terms, patterns
+across the table, and any strong disagreement about how much GenAI itself
+is responsible for the strain.
+
+```{=typst}
+#pagebreak()
+```
+
+## Theme: Perfect world and desired change
+
+Why this theme: understanding what maintainers and contributors would want
+to see change, given that these tools exist and are not going away.
+
+Questions:
+
+- In a perfect world, what would GenAI assisted contributions to open
+  source projects look like?
+- What is the one thing that, if changed, would most reduce burden for
+  people at this table?
+- What would this table need, from tools, from the community, or from
+  other maintainers, to feel less strained?
+- If this table could send one message to every contributor using GenAI to
+  submit to open source projects, what would it be?
+
+Facilitator probe: push past "better tools" as an answer. What
+specifically would a better tool or norm do differently?
+
+Time budget: if short on time, prioritize the one thing that would help
+question and the one message question.
+
+Log in the shared doc: concrete, specific answers, not just "less burden"
+or "better review." Specificity is what turns into guidelines later.
+
+```{=typst}
+#pagebreak()
+```
+
+## Theme: AI-generated contribution quality
+
+Why this theme: understanding the reviewer side burden of AI-generated or
+AI-assisted contributions, and how maintainers and editorial processes are
+handling it.
+
+Questions:
+
+- How does this table currently tell, or guess, when a contribution was AI
+  generated or AI assisted?
+- How has the volume of AI-influenced contributions changed for people at
+  this table, compared to a year or two ago?
+- Does triage or review process differ for these versus other
+  contributions? How?
+- Has anyone at this table dealt with a low quality or hallucinated
+  AI-generated submission? What happened?
+
+Facilitator probe: ask whether this shows up differently in code
+contributions versus other kinds of submissions, like JOSE reviews or
+documentation.
+
+Time budget: if short on time, prioritize the triage difference question
+and any specific incident.
+
+Log in the shared doc: any concrete detection strategies or triage
+practices mentioned. These are the most directly reusable for guidelines.
