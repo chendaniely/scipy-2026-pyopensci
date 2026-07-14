@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Maintainer Interview Guide</title>
+<title>pyOpenSci: Maintainer Interview Guide</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -49,34 +49,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
-  <li><a href="#how-to-use-this-guide" id="toc-how-to-use-this-guide" class="nav-link" data-scroll-target="#how-to-use-this-guide">How to use this guide</a></li>
-  <li><a href="#intro-and-consent-about-2-minutes" id="toc-intro-and-consent-about-2-minutes" class="nav-link" data-scroll-target="#intro-and-consent-about-2-minutes">Intro and consent (about 2 minutes)</a></li>
-  <li><a href="#stay-involved" id="toc-stay-involved" class="nav-link" data-scroll-target="#stay-involved">Stay involved</a></li>
-  <li><a href="#core-block-about-30-minutes" id="toc-core-block-about-30-minutes" class="nav-link" data-scroll-target="#core-block-about-30-minutes">Core block (about 30 minutes)</a>
-  <ul class="collapse">
-  <li><a href="#context-and-workflow-about-5-minutes" id="toc-context-and-workflow-about-5-minutes" class="nav-link" data-scroll-target="#context-and-workflow-about-5-minutes">Context and workflow (about 5 minutes)</a></li>
-  <li><a href="#motivations-and-perceptions-about-7-minutes" id="toc-motivations-and-perceptions-about-7-minutes" class="nav-link" data-scroll-target="#motivations-and-perceptions-about-7-minutes">Motivations and perceptions (about 7 minutes)</a></li>
-  <li><a href="#burden-and-strain-about-8-minutes" id="toc-burden-and-strain-about-8-minutes" class="nav-link" data-scroll-target="#burden-and-strain-about-8-minutes">Burden and strain (about 8 minutes)</a></li>
-  <li><a href="#perfect-world-and-desired-change-about-8-minutes" id="toc-perfect-world-and-desired-change-about-8-minutes" class="nav-link" data-scroll-target="#perfect-world-and-desired-change-about-8-minutes">Perfect world and desired change (about 8 minutes)</a></li>
-  </ul></li>
-  <li><a href="#extension-block-about-30-more-minutes-time-permitting" id="toc-extension-block-about-30-more-minutes-time-permitting" class="nav-link" data-scroll-target="#extension-block-about-30-more-minutes-time-permitting">Extension block (about 30 more minutes, time permitting)</a>
-  <ul class="collapse">
-  <li><a href="#ai-generated-contribution-quality-about-7-to-8-minutes" id="toc-ai-generated-contribution-quality-about-7-to-8-minutes" class="nav-link" data-scroll-target="#ai-generated-contribution-quality-about-7-to-8-minutes">AI-generated contribution quality (about 7 to 8 minutes)</a></li>
-  <li><a href="#tool-specific-deep-dive-about-5-to-6-minutes" id="toc-tool-specific-deep-dive-about-5-to-6-minutes" class="nav-link" data-scroll-target="#tool-specific-deep-dive-about-5-to-6-minutes">Tool-specific deep dive (about 5 to 6 minutes)</a></li>
-  <li><a href="#before-and-after-comparison-about-5-to-6-minutes" id="toc-before-and-after-comparison-about-5-to-6-minutes" class="nav-link" data-scroll-target="#before-and-after-comparison-about-5-to-6-minutes">Before and after comparison (about 5 to 6 minutes)</a></li>
-  <li><a href="#community-and-behavior-change-about-5-to-6-minutes" id="toc-community-and-behavior-change-about-5-to-6-minutes" class="nav-link" data-scroll-target="#community-and-behavior-change-about-5-to-6-minutes">Community and behavior change (about 5 to 6 minutes)</a></li>
-  </ul></li>
-  <li><a href="#closing-about-2-to-3-minutes" id="toc-closing-about-2-to-3-minutes" class="nav-link" data-scroll-target="#closing-about-2-to-3-minutes">Closing (about 2 to 3 minutes)</a></li>
+  <li><a href="#if-you-have-more-time" id="toc-if-you-have-more-time" class="nav-link active" data-scroll-target="#if-you-have-more-time">If you have more time</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="interview-guide.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="../interview-guide.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Maintainer Interview Guide</h1>
-<p class="subtitle lead">GenAI Usage and Burden</p>
+<h1 class="title">pyOpenSci: Maintainer Interview Guide</h1>
+<p class="subtitle lead">GenAI Usage and Burden @ SciPy 2026</p>
 </div>
 
 
@@ -93,110 +75,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="purpose" class="level2">
-<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
-<p>This guide supports one on one, recorded interviews with open source package maintainers. The goal is to understand how GenAI and LLM tools are affecting maintainer workload and burden, not just how often people use these tools. Findings will feed into a pyOpenSci writeup and reporting effort on overall maintainer burden.</p>
-</section>
-<section id="how-to-use-this-guide" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use-this-guide">How to use this guide</h2>
-<p>Treat this as semi-structured, not a script. The core section is designed to run about 30 minutes. If the conversation is going well and there is time, move into the extension section, which can extend the conversation to about 60 minutes. Follow interesting threads even if they mean skipping ahead or out of order. Probes are suggestions, not requirements. Use them when a question lands flat or when there is room to go deeper.</p>
-</section>
-<section id="intro-and-consent-about-2-minutes" class="level2">
-<h2 class="anchored" data-anchor-id="intro-and-consent-about-2-minutes">Intro and consent (about 2 minutes)</h2>
-<p>Read or paraphrase:</p>
-<p>“Thanks for making time for this. This is part of a pyOpenSci effort looking at how GenAI tools are affecting package maintainers, specifically around workload and burden, not just adoption rates. I would like to record this so I can stay in the conversation instead of taking notes. The recording will be used for transcription and analysis, and any published reporting will anonymize your responses. Is that okay with you?</p>
-<p>We have about 30 minutes, maybe up to 60 if it is flowing and you have time. There are no wrong answers here. I am interested in your honest experience, including the parts that feel messy or contradictory.”</p>
-</section>
-<section id="stay-involved" class="level2">
-<h2 class="anchored" data-anchor-id="stay-involved">Stay involved</h2>
-<p>Want to stay involved after this interview? Scan the code or use the link below to join the survey, sprint, or focus group mailing list.</p>
-<div style="border:2px dashed #888; width:160px; height:160px; display:flex; align-items:center; justify-content:center; text-align:center; margin:1.5em auto; font-size:0.9em; color:#666;">
-<p>QR code placeholder</p>
+<div style="font-size:0.78em; color:#555; line-height:1.35;">
+<p><strong>Purpose.</strong> Semi-structured, recorded interviews with open source package maintainers, on how GenAI affects maintainer workload and burden, not just adoption. Feeds a pyOpenSci writeup and reporting effort on maintainer burden.</p>
+<p><strong>How to use.</strong> Page 1 is a complete 15 minute interview: read the intro, ask the six core questions, close, and share the sign-up. Have more time? Turn the page for follow-up questions, ordered most valuable first, then come back here to close. Treat every question as semi-structured. Follow interesting threads, skip what does not land, and use probes only when a question falls flat.</p>
+<p><strong>Topics.</strong> ■ Context &amp; workflow · ● Motivation &amp; perception · ▲ Burden &amp; strain · ◆ Reviewer burden · ◐ Agency &amp; control · ▶ Desired change &amp; policy · ♥ Contributor relationship · ▼ Deskilling</p>
+<p><strong>Deliverables</strong> (each question is tagged with the proposal output it feeds). [I] IDEA contributor framework · [P] AI policy decision tool · [F] Survey findings &amp; burden report · [L] Policy landscape analysis</p>
 </div>
-<p>Survey link: ______________________________________</p>
-</section>
-<section id="core-block-about-30-minutes" class="level2">
-<h2 class="anchored" data-anchor-id="core-block-about-30-minutes">Core block (about 30 minutes)</h2>
-<section id="context-and-workflow-about-5-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="context-and-workflow-about-5-minutes">Context and workflow (about 5 minutes)</h3>
-<ul>
-<li>What project or projects do you maintain, and how long have you been doing it?</li>
-<li>How big is your maintainer team? How much of this lands on you alone?</li>
-<li>Where does GenAI show up in your day to day maintenance work right now, if at all? Think coding, review, triage, docs, communications.</li>
-</ul>
-<p>Probe: if they say GenAI does not show up in their own work, ask whether they see it showing up in others’ contributions even so.</p>
-</section>
-<section id="motivations-and-perceptions-about-7-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="motivations-and-perceptions-about-7-minutes">Motivations and perceptions (about 7 minutes)</h3>
-<ul>
-<li>What led you to start using GenAI tools in your maintainer work? Or, what has kept you from adopting them?</li>
-<li>When you do use them, what are you actually gaining? Not how often you use them, but what the value is.</li>
-<li>What are your honest feelings about these tools in your role as a maintainer specifically?</li>
-<li>Has that perception shifted over time? Better, worse, more mixed?</li>
-</ul>
-<p>Probe: is there a gap between what you think you are supposed to feel about these tools and what you actually feel day to day?</p>
-</section>
-<section id="burden-and-strain-about-8-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="burden-and-strain-about-8-minutes">Burden and strain (about 8 minutes)</h3>
-<ul>
-<li>Where has GenAI added burden to your work? Where has it relieved it?</li>
-<li>Walk me through a recent time you reviewed a contribution you suspected was AI assisted. What was that like?</li>
-<li>How much of your current strain, if any, do you attribute to GenAI related changes versus everything else?</li>
-<li>Is there a specific moment that stands out as particularly stressful in this space?</li>
-</ul>
-<p>Probe: this can be a hard thing to say out loud. If someone hesitates, reiterate that this is confidential and anonymized in any writeup.</p>
-</section>
-<section id="perfect-world-and-desired-change-about-8-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="perfect-world-and-desired-change-about-8-minutes">Perfect world and desired change (about 8 minutes)</h3>
-<ul>
-<li>In a perfect world, what would contributions to your project look like, given these tools exist?</li>
-<li>What is the one thing that, if changed, would most reduce your burden right now?</li>
-<li>What would you need, from tools, from the community, or from other maintainers, to feel less strained?</li>
-<li>If you could send one message to every contributor using GenAI to submit to your project, what would it be?</li>
-</ul>
-<p><em>This is a natural stopping point if time is short.</em></p>
-</section>
-</section>
-<section id="extension-block-about-30-more-minutes-time-permitting" class="level2">
-<h2 class="anchored" data-anchor-id="extension-block-about-30-more-minutes-time-permitting">Extension block (about 30 more minutes, time permitting)</h2>
-<section id="ai-generated-contribution-quality-about-7-to-8-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="ai-generated-contribution-quality-about-7-to-8-minutes">AI-generated contribution quality (about 7 to 8 minutes)</h3>
-<ul>
-<li>How do you currently tell, or guess, when a contribution was AI generated or AI assisted?</li>
-<li>How has the volume of AI-influenced contributions changed compared to a year or two ago?</li>
-<li>Does your triage process differ for these versus other contributions? Walk me through it.</li>
-<li>Are there specific incidents with low quality or hallucinated AI-generated submissions that stick with you?</li>
-</ul>
-</section>
-<section id="tool-specific-deep-dive-about-5-to-6-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="tool-specific-deep-dive-about-5-to-6-minutes">Tool-specific deep dive (about 5 to 6 minutes)</h3>
-<ul>
-<li>Which specific tools do you personally use? For example Copilot, ChatGPT, Claude Code, Cursor, or review bots like CodeRabbit.</li>
-<li>Walk me through a specific, recent example of using one of these in your maintainer work.</li>
-<li>Is there anything you tried and abandoned? What did not work?</li>
-</ul>
-</section>
-<section id="before-and-after-comparison-about-5-to-6-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="before-and-after-comparison-about-5-to-6-minutes">Before and after comparison (about 5 to 6 minutes)</h3>
-<ul>
-<li>Think back to your workflow two or three years ago versus today. What is concretely different?</li>
-<li>Has the kind of work you do changed? For example, less writing code, more reviewing and verifying.</li>
-</ul>
-</section>
-<section id="community-and-behavior-change-about-5-to-6-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="community-and-behavior-change-about-5-to-6-minutes">Community and behavior change (about 5 to 6 minutes)</h3>
-<ul>
-<li>What would help maintainers collectively, not just you personally? Think policies, norms, tooling.</li>
-<li>Are there other projects or communities you think are handling this well?</li>
-<li>What do you wish the broader open source or pyOpenSci community understood about this that is not well understood yet?</li>
-</ul>
-</section>
+<div class="columns">
+<div class="column" style="width:49%;">
+<section id="intro-and-consent-about-3-minutes" class="level2">
+<h2 class="anchored" data-anchor-id="intro-and-consent-about-3-minutes">Intro and consent (about 3 minutes)</h2>
+<p>Read or paraphrase:</p>
+<p>“Thanks for making time. This is a pyOpenSci effort on how GenAI tools affect maintainers, focused on workload and burden, not just adoption. I would like to record this for transcription and analysis. Recordings stay with the research team, and any reporting is anonymized. You can skip any question or stop at any time. Is that okay?</p>
+<p>We have about _____ minutes. There are no wrong answers. I want your honest experience, including the messy or contradictory parts.</p>
+<p>To start: what do you maintain, what is your role there, and how big is the maintainer team? How much of the work lands on you?”</p>
 </section>
 <section id="closing-about-2-to-3-minutes" class="level2">
 <h2 class="anchored" data-anchor-id="closing-about-2-to-3-minutes">Closing (about 2 to 3 minutes)</h2>
 <p>Read or paraphrase:</p>
 <p>“Is there anything I have not asked about that you think is important here?</p>
-<p>Thank you so much for your candor and your time, this is genuinely useful. If you are interested, there is a survey and a focus group you can join, and I can send you the link. I will follow up once this is written up if you would like to see where it lands.”</p>
+<p>Thank you so much for your candor and your time, this is genuinely useful. If you are interested, there is a survey and a focus group you can join. Scan the code or use the link below. I will follow up once this is written up if you would like to see where it lands.”</p>
+<p><img src="qr-code.png" class="img-fluid" style="display:block; margin:0.5em auto;" alt="QR code linking to the pyOpenSci research sign-up form" width="120"></p>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq_ZFP1rK2SLtdTdDP1Ei2BNQe9eqP8kRDxRX4-4jqPdsESA/viewform">Survey Link</a></p>
+</section>
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:49%;">
+<section id="core-six-about-15-minutes" class="level2">
+<h2 class="anchored" data-anchor-id="core-six-about-15-minutes">Core six (about 15 minutes)</h2>
+<p>Ask these of everyone. They stand on their own as a complete short interview.</p>
+<ol type="1">
+<li>■ Where does GenAI show up in your day to day maintenance work right now, if at all? Think coding, review, triage, docs, communications. <em>[Context &amp; workflow]</em> [F]</li>
+<li>● What are your honest feelings about these tools in your role as a maintainer specifically? <em>[Motivation &amp; perception]</em> [F]</li>
+<li>▲ Where has GenAI added burden to your work? Where has it relieved it? <em>[Burden &amp; strain]</em> [F]</li>
+<li>◆ Walk me through a recent time you reviewed a contribution you suspected was AI assisted. What was that like? <em>[Reviewer burden]</em> [F]</li>
+<li>■ When AI is used well in your work or in a contribution, versus dumped in without much thought, what actually separates the two? <em>[Context &amp; workflow]</em> [I]</li>
+<li>▶ What is the one thing that, if changed, would most reduce your burden right now? <em>[Desired change &amp; policy]</em> [P] [F]</li>
+</ol>
+</section>
+</div>
+</div>
+<section id="if-you-have-more-time" class="level2">
+<h2 class="anchored" data-anchor-id="if-you-have-more-time">If you have more time</h2>
+<p>The list is ordered most valuable first, so work straight down it as far as time allows, then come back to page 1 to close. Follow threads, skip what does not land, and reorder to match the conversation.</p>
+<ol start="7" type="1">
+<li>◐ What about AI’s impact on your work and your community feels within your control right now? What feels out of your control? <em>[Agency &amp; control]</em> [F]</li>
+<li>◆ What patterns in AI-assisted submissions make them hardest to review, and what is it like to be handed one that is difficult, or nearly impossible, to review well? <em>[Reviewer burden]</em> [I] [F]</li>
+<li>◆ Tell me about a time an AI-assisted contribution introduced a concrete problem, a subtle bug, a security or licensing issue, technical debt, or a hallucinated dependency. What happened, and how did you catch it? <em>[Reviewer burden]</em> [I] [F]</li>
+<li>▼ Have you noticed AI tool use affecting how newer contributors or maintainers build their skills? What have you seen? <em>[Deskilling]</em> [F] [I]</li>
+<li>♥ Do you think contributors understand how you and other maintainers feel about AI use, and what it is doing to trust between you? Do they see the strain it can create? <em>[Contributor relationship]</em> [F]<br>
+Probe: is there a gap between what you think you are supposed to feel and what you actually feel day to day? Has anything about AI-assisted contributions changed how much you trust a submission before you even open it?</li>
+<li>▶ Does your project have any policy or norm about AI-assisted contributions, even an informal one? How did you land on it, and has it actually worked? <em>[Desired change &amp; policy]</em> [P] [L]</li>
+<li>■ When you use GenAI on your own project, how do you decide what to hand it and what to do yourself, and how do you check what comes back? <em>[Context &amp; workflow]</em> [I]</li>
+<li>● What led you to start using GenAI tools in your maintainer work, or what has kept you from adopting them? <em>[Motivation &amp; perception]</em> [F]</li>
+</ol>
+<ol start="15" type="1">
+<li>● When you do use them, what are you actually gaining? Not how often, but what the value is. <em>[Motivation &amp; perception]</em> [F]</li>
+<li>▶ What would make this less straining, for you personally and for maintainers collectively? Think tooling, community norms, policies, support from other maintainers. <em>[Desired change &amp; policy]</em> [P]</li>
+<li>♥ If you could send one message to every contributor using GenAI to submit to your project, what would it be? <em>[Contributor relationship]</em> [F]</li>
+<li>▲ How much of your current strain, if any, do you attribute to GenAI related changes versus everything else? <em>[Burden &amp; strain]</em> [F]<br>
+Probe: this can be hard to say out loud. Reiterate that it is confidential and anonymized.</li>
+<li>▲ Is there a specific moment that stands out as particularly stressful in this space? <em>[Burden &amp; strain]</em> [F]</li>
+<li>◆ How do you currently tell, or guess, when a contribution was AI generated, and does your triage differ for those? <em>[Reviewer burden]</em> [P]</li>
+<li>■ Thinking back two or three years versus today, what is concretely different in your workflow? Has the kind of work changed, for example less writing code and more reviewing? <em>[Context &amp; workflow]</em> [F]</li>
+<li>● Is there anything you tried and abandoned? What did not work, and why? <em>[Motivation &amp; perception]</em> [F]</li>
+</ol>
 </section>
 
 </main>

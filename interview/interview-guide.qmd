@@ -1,6 +1,6 @@
 ---
-title: "Maintainer Interview Guide"
-subtitle: "GenAI Usage and Burden"
+title: "pyOpenSci: Maintainer Interview Guide"
+subtitle: "GenAI Usage and Burden @ SciPy 2026"
 format:
   html:
     toc: true
@@ -14,169 +14,107 @@ format:
     number-sections: false
     include-in-header:
       text: |
-        #show heading.where(level: 1): set text(size: 13pt, weight: "bold")
-        #show heading.where(level: 1): set block(above: 10pt, below: 4pt)
-        #show heading.where(level: 2): set text(size: 11pt, weight: "bold")
-        #show heading.where(level: 2): set block(above: 8pt, below: 3pt)
-        #set list(spacing: 5pt)
-        #set par(spacing: 6pt, leading: 0.6em)
+        #show heading.where(level: 1): set text(size: 12pt, weight: "bold")
+        #show heading.where(level: 1): set block(above: 11pt, below: 5pt)
+        #show heading.where(level: 2): set text(size: 10.5pt, weight: "bold")
+        #show heading.where(level: 2): set block(above: 9pt, below: 4pt)
+        #set list(spacing: 9pt)
+        #set par(spacing: 9pt, leading: 0.85em)
 ---
 
-## Purpose
-
-This guide supports one on one, recorded interviews with open source package
-maintainers.
-The goal is to understand how GenAI and LLM tools are affecting maintainer
-workload and burden, not just how often people use these tools.
-Findings will feed into a pyOpenSci writeup and reporting effort on overall
-maintainer burden.
-
-## How to use this guide
-
-Treat this as semi-structured, not a script.
-The core section is designed to run about 30 minutes.
-If the conversation is going well and there is time, move into the extension
-section, which can extend the conversation to about 60 minutes.
-Follow interesting threads even if they mean skipping ahead or out of order.
-Probes are suggestions, not requirements. Use them when a question lands flat
-or when there is room to go deeper.
-
-## Intro and consent (about 2 minutes)
-
-Read or paraphrase:
-
-"Thanks for making time for this. This is part of a pyOpenSci effort looking
-at how GenAI tools are affecting package maintainers, specifically around
-workload and burden, not just adoption rates.
-I would like to record this so I can stay in the conversation instead of
-taking notes.
-The recording will be used for transcription and analysis, and any published
-reporting will anonymize your responses.
-Is that okay with you?
-
-We have about 30 minutes, maybe up to 60 if it is flowing and you have time.
-There are no wrong answers here. I am interested in your honest experience,
-including the parts that feel messy or contradictory."
-
-## Stay involved
-
-Want to stay involved after this interview? Scan the code or use the link
-below to join the survey, sprint, or focus group mailing list.
-
 ::: {.content-visible when-format="html"}
-::: {style="border:2px dashed #888; width:160px; height:160px; display:flex; align-items:center; justify-content:center; text-align:center; margin:1.5em auto; font-size:0.9em; color:#666;"}
-QR code placeholder
+::: {style="font-size:0.78em; color:#555; line-height:1.35;"}
+**Purpose.**
+Semi-structured, recorded interviews with open source package maintainers,
+on how GenAI affects maintainer workload and burden, not just adoption.
+Feeds a pyOpenSci writeup and reporting effort on maintainer burden.
+
+**How to use.**
+Page 1 is a complete 15 minute interview: read the intro, ask the six core
+questions, close, and share the sign-up.
+Have more time? Turn the page for follow-up questions, ordered most valuable
+first, then come back here to close.
+Treat every question as semi-structured. Follow interesting threads, skip what
+does not land, and use probes only when a question falls flat.
+
+**Topics.**
+■ Context & workflow ·
+● Motivation & perception ·
+▲ Burden & strain ·
+◆ Reviewer burden ·
+◐ Agency & control ·
+▶ Desired change & policy ·
+♥ Contributor relationship ·
+▼ Deskilling
+
+**Deliverables** (each question is tagged with the proposal output it feeds).
+[I] IDEA contributor framework ·
+[P] AI policy decision tool ·
+[F] Survey findings & burden report ·
+[L] Policy landscape analysis
 :::
 :::
 
 ::: {.content-visible when-format="typst"}
 ```{=typst}
-#align(center)[
-  #box(width: 1.3in, height: 1.3in, stroke: 1pt, inset: 8pt)[
-    #align(center + horizon)[QR CODE #linebreak() PLACEHOLDER]
-  ]
+#text(size: 8pt, fill: luma(90))[
+  *Purpose.*
+  Semi-structured, recorded interviews with open source package maintainers,
+  on how GenAI affects maintainer workload and burden, not just adoption.
+  Feeds a pyOpenSci writeup and reporting effort on maintainer burden.
+
+  *How to use.*
+  Page 1 is a complete 15 minute interview: read the intro, ask the six core
+  questions, close, and share the sign-up.
+  Have more time? Turn the page for follow-up questions, ordered most valuable
+  first, then come back here to close.
+  Treat every question as semi-structured. Follow interesting threads, skip
+  what does not land, and use probes only when a question falls flat.
+
+  *Topics.*
+  ■ Context & workflow ·
+  ● Motivation & perception ·
+  ▲ Burden & strain ·
+  ◆ Reviewer burden ·
+  ◐ Agency & control ·
+  ▶ Desired change & policy ·
+  ♥ Contributor relationship ·
+  ▼ Deskilling
+
+  *Deliverables* (each question is tagged with the proposal output it feeds).
+  \[I\] IDEA contributor framework ·
+  \[P\] AI policy decision tool ·
+  \[F\] Survey findings & burden report ·
+  \[L\] Policy landscape analysis
 ]
+#line(length: 100%, stroke: 0.5pt + luma(200))
 ```
 :::
 
-Survey link: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 ```{=typst}
-#pagebreak()
-#set page(columns: 2)
+#show: rest => columns(2, rest)
 ```
 
-## Core block (about 30 minutes)
+::::: {.columns}
 
-### Context and workflow (about 5 minutes)
+:::: {.column width="49%"}
 
-- What project or projects do you maintain, and how long have you been doing
-  it?
-- How big is your maintainer team? How much of this lands on you alone?
-- Where does GenAI show up in your day to day maintenance work right now, if
-  at all? Think coding, review, triage, docs, communications.
+## Intro and consent (about 3 minutes)
 
-Probe: if they say GenAI does not show up in their own work, ask whether they
-see it showing up in others' contributions even so.
+Read or paraphrase:
 
-### Motivations and perceptions (about 7 minutes)
+"Thanks for making time. This is a pyOpenSci effort on how GenAI tools affect
+maintainers, focused on workload and burden, not just adoption.
+I would like to record this for transcription and analysis.
+Recordings stay with the research team, and any reporting is anonymized.
+You can skip any question or stop at any time.
+Is that okay?
 
-- What led you to start using GenAI tools in your maintainer work? Or, what
-  has kept you from adopting them?
-- When you do use them, what are you actually gaining? Not how often you use
-  them, but what the value is.
-- What are your honest feelings about these tools in your role as a
-  maintainer specifically?
-- Has that perception shifted over time? Better, worse, more mixed?
+We have about \_\_\_\_\_ minutes. There are no wrong answers. I want your honest
+experience, including the messy or contradictory parts.
 
-Probe: is there a gap between what you think you are supposed to feel about
-these tools and what you actually feel day to day?
-
-### Burden and strain (about 8 minutes)
-
-- Where has GenAI added burden to your work? Where has it relieved it?
-- Walk me through a recent time you reviewed a contribution you suspected was
-  AI assisted. What was that like?
-- How much of your current strain, if any, do you attribute to GenAI related
-  changes versus everything else?
-- Is there a specific moment that stands out as particularly stressful in
-  this space?
-
-Probe: this can be a hard thing to say out loud. If someone hesitates,
-reiterate that this is confidential and anonymized in any writeup.
-
-### Perfect world and desired change (about 8 minutes)
-
-- In a perfect world, what would contributions to your project look like,
-  given these tools exist?
-- What is the one thing that, if changed, would most reduce your burden right
-  now?
-- What would you need, from tools, from the community, or from other
-  maintainers, to feel less strained?
-- If you could send one message to every contributor using GenAI to submit to
-  your project, what would it be?
-
-*This is a natural stopping point if time is short.*
-
-```{=typst}
-#colbreak()
-```
-
-## Extension block (about 30 more minutes, time permitting)
-
-### AI-generated contribution quality (about 7 to 8 minutes)
-
-- How do you currently tell, or guess, when a contribution was AI generated
-  or AI assisted?
-- How has the volume of AI-influenced contributions changed compared to a
-  year or two ago?
-- Does your triage process differ for these versus other contributions? Walk
-  me through it.
-- Are there specific incidents with low quality or hallucinated AI-generated
-  submissions that stick with you?
-
-### Tool-specific deep dive (about 5 to 6 minutes)
-
-- Which specific tools do you personally use? For example Copilot, ChatGPT,
-  Claude Code, Cursor, or review bots like CodeRabbit.
-- Walk me through a specific, recent example of using one of these in your
-  maintainer work.
-- Is there anything you tried and abandoned? What did not work?
-
-### Before and after comparison (about 5 to 6 minutes)
-
-- Think back to your workflow two or three years ago versus today. What is
-  concretely different?
-- Has the kind of work you do changed? For example, less writing code, more
-  reviewing and verifying.
-
-### Community and behavior change (about 5 to 6 minutes)
-
-- What would help maintainers collectively, not just you personally? Think
-  policies, norms, tooling.
-- Are there other projects or communities you think are handling this well?
-- What do you wish the broader open source or pyOpenSci community understood
-  about this that is not well understood yet?
+To start: what do you maintain, what is your role there, and how big is the
+maintainer team? How much of the work lands on you?"
 
 ## Closing (about 2 to 3 minutes)
 
@@ -185,7 +123,118 @@ Read or paraphrase:
 "Is there anything I have not asked about that you think is important here?
 
 Thank you so much for your candor and your time, this is genuinely useful.
-If you are interested, there is a survey and a focus group you can join, and
-I can send you the link.
+If you are interested, there is a survey and a focus group you can join.
+Scan the code or use the link below.
 I will follow up once this is written up if you would like to see where it
 lands."
+
+::: {.content-visible when-format="html"}
+![](qr-code.png){fig-alt="QR code linking to the pyOpenSci research sign-up form" width="120px" style="display:block; margin:0.5em auto;"}
+:::
+
+::: {.content-visible when-format="typst"}
+```{=typst}
+#align(center)[
+  #image("qr-code.png", width: 1in)
+]
+```
+:::
+
+[Survey Link](https://docs.google.com/forms/d/e/1FAIpQLSdq_ZFP1rK2SLtdTdDP1Ei2BNQe9eqP8kRDxRX4-4jqPdsESA/viewform)
+
+::::
+
+:::: {.column width="2%"}
+::::
+
+```{=typst}
+#colbreak()
+```
+
+:::: {.column width="49%"}
+
+## Core six (about 15 minutes)
+
+Ask these of everyone. They stand on their own as a complete short interview.
+
+1. ■ Where does GenAI show up in your day to day maintenance work right now,
+   if at all? Think coding, review, triage, docs, communications.
+   *[Context & workflow]* [F]
+2. ● What are your honest feelings about these tools in your role as a
+   maintainer specifically? *[Motivation & perception]* [F]
+3. ▲ Where has GenAI added burden to your work? Where has it relieved it?
+   *[Burden & strain]* [F]
+4. ◆ Walk me through a recent time you reviewed a contribution you suspected
+   was AI assisted. What was that like? *[Reviewer burden]* [F]
+5. ■ When AI is used well in your work or in a contribution, versus dumped in
+   without much thought, what actually separates the two?
+   *[Context & workflow]* [I]
+6. ▶ What is the one thing that, if changed, would most reduce your burden
+   right now? *[Desired change & policy]* [P] [F]
+
+::::
+
+:::::
+
+```{=typst}
+#colbreak()
+```
+
+## If you have more time
+
+The list is ordered most valuable first, so work straight down it as far as
+time allows, then come back to page 1 to close.
+Follow threads, skip what does not land, and reorder to match the conversation.
+
+7. ◐ What about AI's impact on your work and your community feels within
+   your control right now? What feels out of your control?
+   *[Agency & control]* [F]
+8. ◆ What patterns in AI-assisted submissions make them hardest to review,
+   and what is it like to be handed one that is difficult, or nearly
+   impossible, to review well? *[Reviewer burden]* [I] [F]
+9. ◆ Tell me about a time an AI-assisted contribution introduced a concrete
+   problem, a subtle bug, a security or licensing issue, technical debt, or a
+   hallucinated dependency. What happened, and how did you catch it?
+   *[Reviewer burden]* [I] [F]
+10. ▼ Have you noticed AI tool use affecting how newer contributors or
+    maintainers build their skills? What have you seen? *[Deskilling]* [F] [I]
+11. ♥ Do you think contributors understand how you and other maintainers
+    feel about AI use, and what it is doing to trust between you? Do they see
+    the strain it can create? *[Contributor relationship]* [F] \
+    Probe: is there a gap between what you think you are supposed to feel and
+    what you actually feel day to day? Has anything about AI-assisted
+    contributions changed how much you trust a submission before you even
+    open it?
+12. ▶ Does your project have any policy or norm about AI-assisted
+    contributions, even an informal one? How did you land on it, and has it
+    actually worked? *[Desired change & policy]* [P] [L]
+13. ■ When you use GenAI on your own project, how do you decide what to hand
+    it and what to do yourself, and how do you check what comes back?
+    *[Context & workflow]* [I]
+14. ● What led you to start using GenAI tools in your maintainer work, or
+    what has kept you from adopting them? *[Motivation & perception]* [F]
+
+```{=typst}
+#colbreak()
+```
+
+15. ● When you do use them, what are you actually gaining? Not how often, but
+    what the value is. *[Motivation & perception]* [F]
+16. ▶ What would make this less straining, for you personally and for
+    maintainers collectively? Think tooling, community norms, policies,
+    support from other maintainers. *[Desired change & policy]* [P]
+17. ♥ If you could send one message to every contributor using GenAI to submit
+    to your project, what would it be? *[Contributor relationship]* [F]
+18. ▲ How much of your current strain, if any, do you attribute to GenAI
+    related changes versus everything else? *[Burden & strain]* [F] \
+    Probe: this can be hard to say out loud. Reiterate that it is confidential
+    and anonymized.
+19. ▲ Is there a specific moment that stands out as particularly stressful in
+    this space? *[Burden & strain]* [F]
+20. ◆ How do you currently tell, or guess, when a contribution was AI
+    generated, and does your triage differ for those? *[Reviewer burden]* [P]
+21. ■ Thinking back two or three years versus today, what is concretely
+    different in your workflow? Has the kind of work changed, for example less
+    writing code and more reviewing? *[Context & workflow]* [F]
+22. ● Is there anything you tried and abandoned? What did not work, and why?
+    *[Motivation & perception]* [F]
