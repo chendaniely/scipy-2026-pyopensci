@@ -1,0 +1,191 @@
+---
+title: "Maintainer Interview Guide"
+subtitle: "GenAI Usage and Burden"
+format:
+  html:
+    toc: true
+    theme: cosmo
+    number-sections: false
+  typst:
+    margin:
+      x: 0.55in
+      y: 0.55in
+    fontsize: 10pt
+    number-sections: false
+    include-in-header:
+      text: |
+        #show heading.where(level: 1): set text(size: 13pt, weight: "bold")
+        #show heading.where(level: 1): set block(above: 10pt, below: 4pt)
+        #show heading.where(level: 2): set text(size: 11pt, weight: "bold")
+        #show heading.where(level: 2): set block(above: 8pt, below: 3pt)
+        #set list(spacing: 5pt)
+        #set par(spacing: 6pt, leading: 0.6em)
+---
+
+## Purpose
+
+This guide supports one on one, recorded interviews with open source package
+maintainers.
+The goal is to understand how GenAI and LLM tools are affecting maintainer
+workload and burden, not just how often people use these tools.
+Findings will feed into a pyOpenSci writeup and reporting effort on overall
+maintainer burden.
+
+## How to use this guide
+
+Treat this as semi-structured, not a script.
+The core section is designed to run about 30 minutes.
+If the conversation is going well and there is time, move into the extension
+section, which can extend the conversation to about 60 minutes.
+Follow interesting threads even if they mean skipping ahead or out of order.
+Probes are suggestions, not requirements. Use them when a question lands flat
+or when there is room to go deeper.
+
+## Intro and consent (about 2 minutes)
+
+Read or paraphrase:
+
+"Thanks for making time for this. This is part of a pyOpenSci effort looking
+at how GenAI tools are affecting package maintainers, specifically around
+workload and burden, not just adoption rates.
+I would like to record this so I can stay in the conversation instead of
+taking notes.
+The recording will be used for transcription and analysis, and any published
+reporting will anonymize your responses.
+Is that okay with you?
+
+We have about 30 minutes, maybe up to 60 if it is flowing and you have time.
+There are no wrong answers here. I am interested in your honest experience,
+including the parts that feel messy or contradictory."
+
+## Stay involved
+
+Want to stay involved after this interview? Scan the code or use the link
+below to join the survey, sprint, or focus group mailing list.
+
+::: {.content-visible when-format="html"}
+::: {style="border:2px dashed #888; width:160px; height:160px; display:flex; align-items:center; justify-content:center; text-align:center; margin:1.5em auto; font-size:0.9em; color:#666;"}
+QR code placeholder
+:::
+:::
+
+::: {.content-visible when-format="typst"}
+```{=typst}
+#align(center)[
+  #box(width: 1.3in, height: 1.3in, stroke: 1pt, inset: 8pt)[
+    #align(center + horizon)[QR CODE #linebreak() PLACEHOLDER]
+  ]
+]
+```
+:::
+
+Survey link: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+```{=typst}
+#pagebreak()
+#set page(columns: 2)
+```
+
+## Core block (about 30 minutes)
+
+### Context and workflow (about 5 minutes)
+
+- What project or projects do you maintain, and how long have you been doing
+  it?
+- How big is your maintainer team? How much of this lands on you alone?
+- Where does GenAI show up in your day to day maintenance work right now, if
+  at all? Think coding, review, triage, docs, communications.
+
+Probe: if they say GenAI does not show up in their own work, ask whether they
+see it showing up in others' contributions even so.
+
+### Motivations and perceptions (about 7 minutes)
+
+- What led you to start using GenAI tools in your maintainer work? Or, what
+  has kept you from adopting them?
+- When you do use them, what are you actually gaining? Not how often you use
+  them, but what the value is.
+- What are your honest feelings about these tools in your role as a
+  maintainer specifically?
+- Has that perception shifted over time? Better, worse, more mixed?
+
+Probe: is there a gap between what you think you are supposed to feel about
+these tools and what you actually feel day to day?
+
+### Burden and strain (about 8 minutes)
+
+- Where has GenAI added burden to your work? Where has it relieved it?
+- Walk me through a recent time you reviewed a contribution you suspected was
+  AI assisted. What was that like?
+- How much of your current strain, if any, do you attribute to GenAI related
+  changes versus everything else?
+- Is there a specific moment that stands out as particularly stressful in
+  this space?
+
+Probe: this can be a hard thing to say out loud. If someone hesitates,
+reiterate that this is confidential and anonymized in any writeup.
+
+### Perfect world and desired change (about 8 minutes)
+
+- In a perfect world, what would contributions to your project look like,
+  given these tools exist?
+- What is the one thing that, if changed, would most reduce your burden right
+  now?
+- What would you need, from tools, from the community, or from other
+  maintainers, to feel less strained?
+- If you could send one message to every contributor using GenAI to submit to
+  your project, what would it be?
+
+*This is a natural stopping point if time is short.*
+
+```{=typst}
+#colbreak()
+```
+
+## Extension block (about 30 more minutes, time permitting)
+
+### AI-generated contribution quality (about 7 to 8 minutes)
+
+- How do you currently tell, or guess, when a contribution was AI generated
+  or AI assisted?
+- How has the volume of AI-influenced contributions changed compared to a
+  year or two ago?
+- Does your triage process differ for these versus other contributions? Walk
+  me through it.
+- Are there specific incidents with low quality or hallucinated AI-generated
+  submissions that stick with you?
+
+### Tool-specific deep dive (about 5 to 6 minutes)
+
+- Which specific tools do you personally use? For example Copilot, ChatGPT,
+  Claude Code, Cursor, or review bots like CodeRabbit.
+- Walk me through a specific, recent example of using one of these in your
+  maintainer work.
+- Is there anything you tried and abandoned? What did not work?
+
+### Before and after comparison (about 5 to 6 minutes)
+
+- Think back to your workflow two or three years ago versus today. What is
+  concretely different?
+- Has the kind of work you do changed? For example, less writing code, more
+  reviewing and verifying.
+
+### Community and behavior change (about 5 to 6 minutes)
+
+- What would help maintainers collectively, not just you personally? Think
+  policies, norms, tooling.
+- Are there other projects or communities you think are handling this well?
+- What do you wish the broader open source or pyOpenSci community understood
+  about this that is not well understood yet?
+
+## Closing (about 2 to 3 minutes)
+
+Read or paraphrase:
+
+"Is there anything I have not asked about that you think is important here?
+
+Thank you so much for your candor and your time, this is genuinely useful.
+If you are interested, there is a survey and a focus group you can join, and
+I can send you the link.
+I will follow up once this is written up if you would like to see where it
+lands."

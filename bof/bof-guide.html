@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.3">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BoF Session Guide</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="bof-guide_files/libs/clipboard/clipboard.min.js"></script>
+<script src="bof-guide_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="bof-guide_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="bof-guide_files/libs/quarto-html/popper.min.js"></script>
+<script src="bof-guide_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="bof-guide_files/libs/quarto-html/anchor.min.js"></script>
+<link href="bof-guide_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="bof-guide_files/libs/quarto-html/quarto-syntax-highlighting-e44360b8a8db1e130c7792fece1c8032.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="bof-guide_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="bof-guide_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="bof-guide_files/libs/bootstrap/bootstrap-8ffd5f67044e5306d9846f29df41dda5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#how-to-use-this-guide" id="toc-how-to-use-this-guide" class="nav-link" data-scroll-target="#how-to-use-this-guide">How to use this guide</a></li>
+  <li><a href="#run-of-show" id="toc-run-of-show" class="nav-link" data-scroll-target="#run-of-show">Run of show</a></li>
+  <li><a href="#room-setup-and-group-formation" id="toc-room-setup-and-group-formation" class="nav-link" data-scroll-target="#room-setup-and-group-formation">Room setup and group formation</a></li>
+  <li><a href="#shared-doc-and-stay-involved" id="toc-shared-doc-and-stay-involved" class="nav-link" data-scroll-target="#shared-doc-and-stay-involved">Shared doc and stay involved</a></li>
+  <li><a href="#theme-cards" id="toc-theme-cards" class="nav-link" data-scroll-target="#theme-cards">Theme cards</a></li>
+  <li><a href="#theme-motivations-and-perceptions" id="toc-theme-motivations-and-perceptions" class="nav-link" data-scroll-target="#theme-motivations-and-perceptions">Theme: Motivations and perceptions</a></li>
+  <li><a href="#theme-burden-and-strain" id="toc-theme-burden-and-strain" class="nav-link" data-scroll-target="#theme-burden-and-strain">Theme: Burden and strain</a></li>
+  <li><a href="#theme-perfect-world-and-desired-change" id="toc-theme-perfect-world-and-desired-change" class="nav-link" data-scroll-target="#theme-perfect-world-and-desired-change">Theme: Perfect world and desired change</a></li>
+  <li><a href="#theme-ai-generated-contribution-quality" id="toc-theme-ai-generated-contribution-quality" class="nav-link" data-scroll-target="#theme-ai-generated-contribution-quality">Theme: AI-generated contribution quality</a></li>
+  <li><a href="#closing" id="toc-closing" class="nav-link" data-scroll-target="#closing">Closing</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="bof-guide.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">BoF Session Guide</h1>
+<p class="subtitle lead">GenAI Usage and Burden</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This guide adapts the pyOpenSci 1:1 maintainer interview effort into a conference Birds of a Feather session. The goal stays the same, understanding GenAI related behaviours well enough to eventually propose guidelines, but the mechanism changes to small group discussion at themed tables, since the organizer will not personally talk with everyone in the room.</p>
+</section>
+<section id="how-to-use-this-guide" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-this-guide">How to use this guide</h2>
+<p>This document has two parts. The first part, the pages you are reading now, is for you as the session organizer: purpose, timing, room setup, and shared doc setup. The second part is a set of theme cards, one per page, meant to be printed and handed to each table’s volunteer facilitator. The themes are defined in a separate file so they can be swapped out without touching anything else in this guide.</p>
+</section>
+<section id="run-of-show" class="level2">
+<h2 class="anchored" data-anchor-id="run-of-show">Run of show</h2>
+<p>Target 45 minutes, expected to run to 60. Only the breakout discussion block is elastic. Everything else stays fixed regardless of overrun.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Segment</th>
+<th>Time</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Welcome and framing</td>
+<td>5 min</td>
+<td>Purpose of the session, why pyOpenSci is looking at this, a short framing of patterns already observed. [Insert current pattern data or observations here before the session. Do not present placeholder numbers as real.]</td>
+</tr>
+<tr class="even">
+<td>Group formation and instructions</td>
+<td>3 min</td>
+<td>Point out the four themed tables, explain self-selection, facilitators introduce themselves, quick note on the shared doc and QR code. State clearly that this session is not about debugging anyone’s specific tool setup, it is about honest experience.</td>
+</tr>
+<tr class="odd">
+<td>Breakout discussion</td>
+<td>27 min, flexes to 40 or more</td>
+<td>Themed tables run their question set with their facilitator, logging notes into the shared doc live. This is the block that absorbs the 45 to 60 minute overrun. If running long, cut here. If running short, add here.</td>
+</tr>
+<tr class="even">
+<td>Facilitator highlights</td>
+<td>5 min</td>
+<td>Each of the four facilitators gives one short spoken highlight from their table, instead of hearing from every attendee, so the room gets a cross section without a full share-back.</td>
+</tr>
+<tr class="odd">
+<td>Closing</td>
+<td>3 min</td>
+<td>Thanks, reminder that notes live in the shared doc, stay-involved QR code or link.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="room-setup-and-group-formation" class="level2">
+<h2 class="anchored" data-anchor-id="room-setup-and-group-formation">Room setup and group formation</h2>
+<p>No dedicated table signage is needed. Each facilitator’s printed theme card doubles as the table marker, held up or placed on the table during the framing segment. After instructions, attendees self-select by walking to whichever themed table interests them most.</p>
+<p>If a table grows past about 10 to 12 people, the facilitator splits into two clusters within the same theme, pooling notes under the same shared doc heading rather than attempting one large-group conversation.</p>
+</section>
+<section id="shared-doc-and-stay-involved" class="level2">
+<h2 class="anchored" data-anchor-id="shared-doc-and-stay-involved">Shared doc and stay involved</h2>
+<p>Before the session, create a single Google Doc for the whole room. Give it one heading per theme, matching the theme cards, plus a stay-involved section at the top with a survey or mailing list link. Set sharing so anyone with the link can comment or edit, and generate a QR code for that link.</p>
+<p>Show the QR code during framing and again at closing. It covers both live note taking during the session and the post session survey signup, so attendees only need to scan once.</p>
+<div style="border:2px dashed #888; width:160px; height:160px; display:flex; align-items:center; justify-content:center; text-align:center; margin:1.5em auto; font-size:0.9em; color:#666;">
+<p>QR code placeholder</p>
+</div>
+<p>Shared doc link: ______________________________________</p>
+</section>
+<section id="theme-cards" class="level2">
+<h2 class="anchored" data-anchor-id="theme-cards">Theme cards</h2>
+<p>The following pages are the theme cards. Print and hand one to each facilitator. Themes are defined in <code>_bof-themes.qmd</code> and can be changed there without editing anything above this line.</p>
+</section>
+<section id="theme-motivations-and-perceptions" class="level2">
+<h2 class="anchored" data-anchor-id="theme-motivations-and-perceptions">Theme: Motivations and perceptions</h2>
+<p>Why this theme: understanding why people adopt or avoid GenAI tools, and how they honestly feel about them, not just how often they use them.</p>
+<p>Questions:</p>
+<ul>
+<li>What led people at this table to start using GenAI tools in their open source work? What has kept others from adopting them?</li>
+<li>When you do use these tools, what are you actually gaining? Not how often, but what the value is.</li>
+<li>What are your honest feelings about these tools in your role, whether that is maintaining, contributing, or reviewing?</li>
+<li>Does everyone at this table feel the same way about this, or is there real disagreement here?</li>
+</ul>
+<p>Facilitator probe: is there a gap between what people think they are supposed to feel about these tools and what they actually feel day to day?</p>
+<p>Time budget: if short on time, prioritize the gaining and value question and the disagreement question.</p>
+<p>Log in the shared doc: the range of views at the table, especially where people disagreed, not just the average.</p>
+</section>
+<section id="theme-burden-and-strain" class="level2">
+<h2 class="anchored" data-anchor-id="theme-burden-and-strain">Theme: Burden and strain</h2>
+<p>Why this theme: understanding where GenAI is adding burden to open source work, and where it might be relieving it, especially for maintainers and reviewers.</p>
+<p>Questions:</p>
+<ul>
+<li>Where has GenAI added burden to the open source work represented at this table? Where has it relieved burden?</li>
+<li>Has anyone reviewed a contribution they suspected was AI assisted? What was that like?</li>
+<li>How much of the strain people feel, if any, gets attributed to GenAI related changes versus everything else going on?</li>
+<li>Is there a specific moment or incident anyone at this table wants to share that stands out as particularly stressful?</li>
+</ul>
+<p>Facilitator probe: this can be a hard thing to say out loud in a group. Remind the table that notes are captured thematically, not attributed to individuals by name.</p>
+<p>Time budget: if short on time, prioritize the burden versus relief question and any specific incident.</p>
+<p>Log in the shared doc: specific incidents in general terms, patterns across the table, and any strong disagreement about how much GenAI itself is responsible for the strain.</p>
+</section>
+<section id="theme-perfect-world-and-desired-change" class="level2">
+<h2 class="anchored" data-anchor-id="theme-perfect-world-and-desired-change">Theme: Perfect world and desired change</h2>
+<p>Why this theme: understanding what maintainers and contributors would want to see change, given that these tools exist and are not going away.</p>
+<p>Questions:</p>
+<ul>
+<li>In a perfect world, what would GenAI assisted contributions to open source projects look like?</li>
+<li>What is the one thing that, if changed, would most reduce burden for people at this table?</li>
+<li>What would this table need, from tools, from the community, or from other maintainers, to feel less strained?</li>
+<li>If this table could send one message to every contributor using GenAI to submit to open source projects, what would it be?</li>
+</ul>
+<p>Facilitator probe: push past “better tools” as an answer. What specifically would a better tool or norm do differently?</p>
+<p>Time budget: if short on time, prioritize the one thing that would help question and the one message question.</p>
+<p>Log in the shared doc: concrete, specific answers, not just “less burden” or “better review.” Specificity is what turns into guidelines later.</p>
+</section>
+<section id="theme-ai-generated-contribution-quality" class="level2">
+<h2 class="anchored" data-anchor-id="theme-ai-generated-contribution-quality">Theme: AI-generated contribution quality</h2>
+<p>Why this theme: understanding the reviewer side burden of AI-generated or AI-assisted contributions, and how maintainers and editorial processes are handling it.</p>
+<p>Questions:</p>
+<ul>
+<li>How does this table currently tell, or guess, when a contribution was AI generated or AI assisted?</li>
+<li>How has the volume of AI-influenced contributions changed for people at this table, compared to a year or two ago?</li>
+<li>Does triage or review process differ for these versus other contributions? How?</li>
+<li>Has anyone at this table dealt with a low quality or hallucinated AI-generated submission? What happened?</li>
+</ul>
+<p>Facilitator probe: ask whether this shows up differently in code contributions versus other kinds of submissions, like JOSE reviews or documentation.</p>
+<p>Time budget: if short on time, prioritize the triage difference question and any specific incident.</p>
+<p>Log in the shared doc: any concrete detection strategies or triage practices mentioned. These are the most directly reusable for guidelines.</p>
+</section>
+<section id="closing" class="level2">
+<h2 class="anchored" data-anchor-id="closing">Closing</h2>
+<p>Read or paraphrase:</p>
+<p>“Thank you all so much for the honest conversation today. Everything your table discussed has been captured in the shared doc, and we will be using it, alongside the 1:1 interviews we are running separately, to understand what is actually going on and start proposing guidelines that reduce burden rather than add to it.</p>
+<p>If you want to stay involved, scan the code or use the link to join the survey, sprint, or focus group mailing list. We will follow up once this is written up.”</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
