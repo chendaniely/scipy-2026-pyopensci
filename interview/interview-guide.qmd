@@ -1,6 +1,6 @@
 ---
 title: "pyOpenSci: Maintainer Interview Guide"
-subtitle: "GenAI Usage and Burden @ SciPy 2026"
+subtitle: "AI Tool Usage and Burden @ SciPy 2026"
 format:
   html:
     toc: true
@@ -26,7 +26,7 @@ format:
 ::: {style="font-size:0.78em; color:#555; line-height:1.35;"}
 **Purpose.**
 Semi-structured, recorded interviews with open source package maintainers,
-on how GenAI affects maintainer workload and burden, not just adoption.
+on how AI tools affect maintainer workload and burden, not just adoption.
 Feeds a pyOpenSci writeup and reporting effort on maintainer burden.
 
 **How to use.**
@@ -60,7 +60,7 @@ does not land, and use probes only when a question falls flat.
 #text(size: 8pt, fill: luma(90))[
   *Purpose.*
   Semi-structured, recorded interviews with open source package maintainers,
-  on how GenAI affects maintainer workload and burden, not just adoption.
+  on how AI tools affect maintainer workload and burden, not just adoption.
   Feeds a pyOpenSci writeup and reporting effort on maintainer burden.
 
   *How to use.*
@@ -103,8 +103,8 @@ does not land, and use probes only when a question falls flat.
 
 Read or paraphrase:
 
-"Thanks for making time. This is a pyOpenSci effort on how GenAI tools affect
-maintainers, focused on workload and burden, not just adoption.
+"Thanks for making time. This is a pyOpenSci effort on how AI tools are
+changing maintainers' work, not just whether people use them.
 I would like to record this for transcription and analysis.
 Recordings stay with the research team, and any reporting is anonymized.
 You can skip any question or stop at any time.
@@ -157,20 +157,22 @@ lands."
 
 Ask these of everyone. They stand on their own as a complete short interview.
 
-1. ■ Where does GenAI show up in your day to day maintenance work right now,
+1. ■ Where do AI tools show up in your day to day maintenance work right now,
    if at all? Think coding, review, triage, docs, communications.
    *[Context & workflow]* [F]
 2. ● What are your honest feelings about these tools in your role as a
    maintainer specifically? *[Motivation & perception]* [F]
-3. ▲ Where has GenAI added burden to your work? Where has it relieved it?
-   *[Burden & strain]* [F]
+3. ▲ Have AI tools changed your workload as a maintainer? Where have they
+   added work, and where have they taken work away? *[Burden & strain]* [F]
 4. ◆ Walk me through a recent time you reviewed a contribution you suspected
    was AI assisted. What was that like? *[Reviewer burden]* [F]
-5. ■ When AI is used well in your work or in a contribution, versus dumped in
-   without much thought, what actually separates the two?
+5. ■ When AI tools are used well in your work or in a contribution, versus
+   their output dumped in without much thought, what actually separates the
+   two?
    *[Context & workflow]* [I]
-6. ▶ What is the one thing that, if changed, would most reduce your burden
-   right now? *[Desired change & policy]* [P] [F]
+6. ▶ What is one thing contributors could change about how they use AI
+   tools that would make their contributions easier for you and your team
+   to work with? *[Desired change & policy]* [P] [F]
 
 ::::
 
@@ -186,8 +188,8 @@ The list is ordered most valuable first, so work straight down it as far as
 time allows, then come back to page 1 to close.
 Follow threads, skip what does not land, and reorder to match the conversation.
 
-7. ◐ What about AI's impact on your work and your community feels within
-   your control right now? What feels out of your control?
+7. ◐ What about the impact of AI tools on your work and your community feels
+   within your control right now? What feels out of your control?
    *[Agency & control]* [F]
 8. ◆ What patterns in AI-assisted submissions make them hardest to review,
    and what is it like to be handed one that is difficult, or nearly
@@ -199,7 +201,7 @@ Follow threads, skip what does not land, and reorder to match the conversation.
 10. ▼ Have you noticed AI tool use affecting how newer contributors or
     maintainers build their skills? What have you seen? *[Deskilling]* [F] [I]
 11. ♥ Do you think contributors understand how you and other maintainers
-    feel about AI use, and what it is doing to trust between you? Do they see
+    feel about AI tool use, and what it is doing to trust between you? Do they see
     the strain it can create? *[Contributor relationship]* [F] \
     Probe: is there a gap between what you think you are supposed to feel and
     what you actually feel day to day? Has anything about AI-assisted
@@ -208,10 +210,10 @@ Follow threads, skip what does not land, and reorder to match the conversation.
 12. ▶ Does your project have any policy or norm about AI-assisted
     contributions, even an informal one? How did you land on it, and has it
     actually worked? *[Desired change & policy]* [P] [L]
-13. ■ When you use GenAI on your own project, how do you decide what to hand
-    it and what to do yourself, and how do you check what comes back?
+13. ■ When you use AI tools on your own project, how do you decide what to
+    hand them and what to do yourself, and how do you check what comes back?
     *[Context & workflow]* [I]
-14. ● What led you to start using GenAI tools in your maintainer work, or
+14. ● What led you to start using AI tools in your maintainer work, or
     what has kept you from adopting them? *[Motivation & perception]* [F]
 
 ```{=typst}
@@ -220,12 +222,13 @@ Follow threads, skip what does not land, and reorder to match the conversation.
 
 15. ● When you do use them, what are you actually gaining? Not how often, but
     what the value is. *[Motivation & perception]* [F]
-16. ▶ What would make this less straining, for you personally and for
-    maintainers collectively? Think tooling, community norms, policies,
-    support from other maintainers. *[Desired change & policy]* [P]
-17. ♥ If you could send one message to every contributor using GenAI to submit
-    to your project, what would it be? *[Contributor relationship]* [F]
-18. ▲ How much of your current strain, if any, do you attribute to GenAI
+16. ▶ What is the one change that would make the biggest difference to your
+    day to day, for you personally and for maintainers collectively?
+    Think tooling, community norms, policies, support from other
+    maintainers. *[Desired change & policy]* [P]
+17. ♥ If you could send one message to every contributor using AI tools to
+    submit to your project, what would it be? *[Contributor relationship]* [F]
+18. ▲ How much of your current strain, if any, do you attribute to AI tool
     related changes versus everything else? *[Burden & strain]* [F] \
     Probe: this can be hard to say out loud. Reiterate that it is confidential
     and anonymized.
